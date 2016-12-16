@@ -4,20 +4,20 @@
             <label class="item item-input">
                 <span class="input-label">Start Date</span>
 <!--                <input type="date" id="StartDate" name="StartDate" ng-model="StartDate" date-format="dd-MM-yyyy"/>-->
-                <input type="date" required ng-model="dStart">
+                <input type="date" required ng-model="dStart" date-format="MM-dd-yy">
             </label>
         </ion-item>
         <ion-item>
             <label class="item item-input">
                 <span class="input-label">End Date</span>
-                <input type="date" required ng-model="dEnd">
+                <input type="date" required ng-model="dEnd" date-format="MM-dd-yy">
             </label>
         </ion-item>
         <button class="button button-outline button-positive" on-tap="searchEvents(dStart, dEnd)">Search</button>
         <ion-item ng-repeat='event in events' class="list card">
-               <h1>{{event.start_at.__text}}</h1>
-               <h1>{{event.title}}</h1>
-<!--               <img class="item item-image" src="{{books.image}}">-->
+               <h3>{{event.title}}</h3>
+               <p>Event Starts: {{event.start_at.__text | date:"MM-dd-yy"}}</p>
+               <p>Event Ends: {{event.end_at.__text | date:"MM-dd-yy"}}</p>
            </ion-item>
     </ion-content>
 </ion-view>

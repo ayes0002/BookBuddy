@@ -55,8 +55,6 @@ angular.module('starter.controllers', [])
         console.log(dEnd);
         Data.getEvents()
             .then(function successCallback(response){
-                console.log(dStart);
-                console.log(dEnd);
                 console.log(response.data);
                 $scope.eData = response.data;
                 $scope.events = response.data.GoodreadsResponse.events.event;

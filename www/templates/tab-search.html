@@ -7,7 +7,7 @@
         </label>
         <ion-list>
            <ion-item ng-repeat='result in results' class="list card">
-               <img src="{{result.best_book.small_image_url}}">
+               <img ng-src="{{result.best_book.small_image_url}}">
                <h3>{{result.best_book.title}}</h3>
                <button ui-sref="tab.search.id({id:result.best_book.id.__text})" ui-sref-active="active" class="button button-outline button-positive">Details</button>
            </ion-item>
