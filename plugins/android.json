@@ -1,0 +1,30 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.mad.bookbuddy"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.mad.bookbuddy"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.mad.bookbuddy"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.mad.bookbuddy"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.mad.bookbuddy"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.mad.bookbuddy"
+        }
+    },
+    "dependent_plugins": {}
+}
